@@ -3,7 +3,7 @@ set(PROJ_NAME load_torch_test)
 project(${PROJ_NAME} CXX)
 
 set(CMAKE_CXX_STANDARD 14)
-if ($ENV{C_IDENTIFIER} DFINED)
+if ($ENV{C_IDENTIFIER} MATCHES PC)
     set(CMAKE_PREFIX_PATH D:\\libtorch)
 else ()
     if (MSVC)

@@ -15,7 +15,7 @@ int main() {
     auto train_set = (double *) malloc(train_set_row * sensor_num * sizeof(double));
     auto test_set = (double *) malloc(test_set_row * sensor_num * sizeof(double));
     auto label_set = (double *) malloc(label_row * sizeof(double));
-    std::ifstream train_set_input_file(data_root + "wat_train_set.pt", std::ios::in | std::ios::binary);
+    std::ifstream train_set_input_file(data_root + "swat_train_set.pt", std::ios::in | std::ios::binary);
     std::ifstream test_set_input_file(data_root + "swat_test_set.pt", std::ios::in | std::ios::binary);
     std::ifstream label_input_file(data_root + "swat_label_set.pt", std::ios::in | std::ios::binary);
     train_set_input_file.read((char *) train_set, train_set_row * sensor_num * sizeof(double));
