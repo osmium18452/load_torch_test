@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <torch/torch.h>
+#include <chrono>
 
 int main() {
 #ifdef _WIN32
